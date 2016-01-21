@@ -1,0 +1,8 @@
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\bin\Inmobiliaria.dll
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\bin\Inmobiliaria.pdb
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\bin\Inmobiliaria.xml
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.Resources.resources
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.GenerateResource.Cache
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.dll
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.xml
+F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
