@@ -4,18 +4,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Inmobiliaria J.A.E.</title>
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Pers.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form runat="server" >
-    <div class="page" style="border-top-left-radius:20px 20px; border-top-right-radius: 20px 20px; border-bottom-left-radius:20px 20px; border-bottom-right-radius: 20px 20px;">
-        <div class="header" style="border-top-left-radius:20px 20px; border-top-right-radius: 20px 20px;" >
+    <div class="page" style="border-top-left-radius:30px 30px; border-top-right-radius: 30px 30px; border-bottom-left-radius:30px 30px; border-bottom-right-radius: 30px 30px;">
+        <div class="header" style="border-top-left-radius:30px 30px; border-top-right-radius: 30px 30px;" >
             <div class="title">
                 <h1>
-                    Inmobiliaria J.A.E.
+                    <a id="TitLink" href="/Default.aspx">Inmobiliaria J.A.E.</a>
+                    <asp:LoginView ID="LoginView1" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        <img id="logotipo"src="/imag/logotipo.png" />
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <a href="~/Administrador/Admin.aspx"><img id="logotipo"src="/imag/logotipo.png" /></a>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                   
                 </h1>
             </div>
             <div class="loginDisplay">
@@ -30,17 +40,19 @@
                 </asp:LoginView>
             </div>
             <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+
+            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Página principal"/>
-                        <asp:MenuItem Text="Búsqueda Avanzada" Value="Búsqueda Avanzada"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="Sobre nosotros"/>
-                        
+                        <asp:MenuItem Text="Búsqueda Avanzada" Value="Búsqueda Avanzada"/>
                     </Items>
-                </asp:Menu>
-                
-                <asp:TextBox ID="TextBox1" runat="server" 
-                    style="position: relative; top: -8px; left: 881px; width: 191px">Encuentra tu casa ideal...</asp:TextBox>
+            </asp:Menu>
+          
+                <div  style="position: relative; top: -6px; left: 847px;">
+                    <asp:TextBox ID="TextBox1" runat="server" style="width: 191px" >Encuentra tu casa ideal...</asp:TextBox>
+                    <asp:ImageButton ID="ImageButton1" src="/imag/lupa.jpg" runat="server" style="width: 22px; margin: 0px 0px 0px 3px; position: relative; bottom: -5px;"/>
+                </div>
                 
             </div>
             
@@ -49,10 +61,13 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
         </div>
         <div class="clear" >
+            <br />
+            <br />
         </div>
     </div>
     <div class="footer">
-        
+        Inmobiliarias J.A.E. Copyright(R) all rights reserved
+        <br />
     </div>
     </form>
 </body>

@@ -6,3 +6,19 @@ F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmo
 F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.dll
 F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.xml
 F:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\bin\Inmobiliaria.dll
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\bin\Inmobiliaria.pdb
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\bin\Inmobiliaria.xml
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.Resources.resources
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.GenerateResource.Cache
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.dll
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.xml
+G:\DAM\2ºDAM\Diseño de Interfaces\Asp\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\bin\Inmobiliaria.dll
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\bin\Inmobiliaria.pdb
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\bin\Inmobiliaria.xml
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.Resources.resources
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.GenerateResource.Cache
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.dll
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.xml
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.pdb

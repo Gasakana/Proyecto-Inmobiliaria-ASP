@@ -40,14 +40,15 @@ p
 h1, h2, h3, h4, h5, h6
 {
     font-size: 1.5em;
-    color: #dfd3b6;
+    color: #4e5766;
     text-transform: none;
     font-weight: 200;
     margin-bottom: 0px;
 }
 
 h1
-{
+{   
+    color: #dfd3b6;
     font-size: 1.6em;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -99,7 +100,7 @@ first child of the left and right table columns */
 {
     position: relative;
     margin: 0px;
-    padding: 0px;
+    padding: 10px 0px 0px 0px;
     background: #a8c545;
     width: 100%;
     

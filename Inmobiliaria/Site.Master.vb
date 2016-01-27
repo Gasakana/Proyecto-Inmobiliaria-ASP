@@ -5,4 +5,9 @@
 
     End Sub
 
+    Protected Sub ImageButton1_Click(sender As Object, e As System.Web.UI.ImageClickEventArgs) Handles ImageButton1.Click
+        Dim texto As String = TextBox1.Text()
+        TextBox1.Text() = "Hola"
+
+    End Sub
 End Class
