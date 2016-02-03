@@ -29,8 +29,13 @@
             <td class="style2">
                 Tipo de vía:&nbsp;</td>
             <td>
-                <asp:DropDownList ID="cbTipoVia" runat="server" Height="16px" Width="129px" AutoPostBack="true" OnSelectedIndexChanged="cbTipoVia_SelectedIndexChanged">
+                <asp:DropDownList ID="cbTipoVia" runat="server" Height="16px" Width="129px"  
+                    DataSourceID="EdificiosDataSource" DataTextField="tipo_via" DataValueField="id">
                 </asp:DropDownList>
+                <asp:SqlDataSource ID="EdificiosDataSource" runat="server" 
+                    ConnectionString="<%$ ConnectionStrings:InmobiliariaConnectionString %>" 
+                    SelectCommand="SELECT [id], [tipo_via], [nombre_via], [numero_via], [piso], [letra_piso], [cp], [pais], [ciudad], [localidad], [precio], [n_habs], [n_banios], [superficie], [ascensor], [parking], [amueblado], [terraza], [calefaccion], [piscina], [jardin], [trastero], [estado], [tipo] FROM [Edificios]">
+                </asp:SqlDataSource>
             </td>
             <td>
                 &nbsp;</td>
@@ -120,7 +125,8 @@
             <td class="style2">
                 Número de habitaciones:</td>
             <td>
-                <asp:DropDownList ID="cbNumHabs" runat="server" Height="19px" Width="127px" AutoPostBack="true" OnSelectedIndexChanged="cbNumHabs_SelectedIndexChanged">
+                <asp:DropDownList ID="cbNumHabs" runat="server" Height="19px" Width="127px" 
+                    DataSourceID="EdificiosDataSource" DataTextField="n_habs" DataValueField="id">
                 </asp:DropDownList>
             </td>
             <td>
@@ -130,7 +136,8 @@
             <td class="style2">
                 Número de baños:</td>
             <td>
-                <asp:DropDownList ID="cbNumBanios" runat="server" Width="127px" AutoPostBack="true" OnSelectedIndexChanged="cbNumBanios_SelectedIndexChanged">
+                <asp:DropDownList ID="cbNumBanios" runat="server" Width="127px" 
+                    DataSourceID="EdificiosDataSource" DataTextField="n_banios" DataValueField="id">
                 </asp:DropDownList>
             </td>
             <td>
@@ -221,7 +228,8 @@
             <td class="style2">
                 Estado:</td>
             <td>
-                <asp:DropDownList ID="cbEstado" runat="server" Width="127px" AutoPostBack="true" OnSelectedIndexChanged="cbTipo_SelectedIndexChanged">
+                <asp:DropDownList ID="cbEstado" runat="server" Width="127px" 
+                    DataSourceID="EdificiosDataSource" DataTextField="estado" DataValueField="id">
                 </asp:DropDownList>
             </td>
             <td>
@@ -231,7 +239,8 @@
             <td class="style2">
                 Tipo:</td>
             <td>
-                <asp:DropDownList ID="cbTipo" runat="server" Width="127px" AutoPostBack="true" OnSelectedIndexChanged="cmbNomCli_SelectedIndexChanged">
+                <asp:DropDownList ID="cbTipo" runat="server" Width="127px" 
+                    DataSourceID="EdificiosDataSource" DataTextField="tipo" DataValueField="id">
                 </asp:DropDownList>
             </td>
             <td>
@@ -249,7 +258,54 @@
 &nbsp;<asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" />
     <br />
     <br />
-    <asp:GridView ID="GVEdificios" runat="server">
+    <asp:GridView ID="GVEdificios" runat="server" AutoGenerateColumns="False" 
+        DataKeyNames="id" DataSourceID="EdificiosDataSource">
+        <Columns>
+            <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" 
+                ReadOnly="True" SortExpression="id" />
+            <asp:BoundField DataField="tipo_via" HeaderText="tipo_via" 
+                SortExpression="tipo_via" />
+            <asp:BoundField DataField="nombre_via" HeaderText="nombre_via" 
+                SortExpression="nombre_via" />
+            <asp:BoundField DataField="numero_via" HeaderText="numero_via" 
+                SortExpression="numero_via" />
+            <asp:BoundField DataField="piso" HeaderText="piso" SortExpression="piso" />
+            <asp:BoundField DataField="letra_piso" HeaderText="letra_piso" 
+                SortExpression="letra_piso" />
+            <asp:BoundField DataField="cp" HeaderText="cp" SortExpression="cp" />
+            <asp:BoundField DataField="pais" HeaderText="pais" SortExpression="pais" />
+            <asp:BoundField DataField="ciudad" HeaderText="ciudad" 
+                SortExpression="ciudad" />
+            <asp:BoundField DataField="localidad" HeaderText="localidad" 
+                SortExpression="localidad" />
+            <asp:BoundField DataField="precio" HeaderText="precio" 
+                SortExpression="precio" />
+            <asp:BoundField DataField="n_habs" HeaderText="n_habs" 
+                SortExpression="n_habs" />
+            <asp:BoundField DataField="n_banios" HeaderText="n_banios" 
+                SortExpression="n_banios" />
+            <asp:BoundField DataField="superficie" HeaderText="superficie" 
+                SortExpression="superficie" />
+            <asp:CheckBoxField DataField="ascensor" HeaderText="ascensor" 
+                SortExpression="ascensor" />
+            <asp:CheckBoxField DataField="parking" HeaderText="parking" 
+                SortExpression="parking" />
+            <asp:CheckBoxField DataField="amueblado" HeaderText="amueblado" 
+                SortExpression="amueblado" />
+            <asp:CheckBoxField DataField="terraza" HeaderText="terraza" 
+                SortExpression="terraza" />
+            <asp:CheckBoxField DataField="calefaccion" HeaderText="calefaccion" 
+                SortExpression="calefaccion" />
+            <asp:CheckBoxField DataField="piscina" HeaderText="piscina" 
+                SortExpression="piscina" />
+            <asp:CheckBoxField DataField="jardin" HeaderText="jardin" 
+                SortExpression="jardin" />
+            <asp:CheckBoxField DataField="trastero" HeaderText="trastero" 
+                SortExpression="trastero" />
+            <asp:BoundField DataField="estado" HeaderText="estado" 
+                SortExpression="estado" />
+            <asp:BoundField DataField="tipo" HeaderText="tipo" SortExpression="tipo" />
+        </Columns>
     </asp:GridView>
     <br />
     

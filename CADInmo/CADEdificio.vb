@@ -16,10 +16,10 @@ Public Class CADEdificio
                                   ByVal num_via As Integer, ByVal piso As Integer, ByVal letra_piso As Char,
                                   ByVal cp As Integer, ByVal pais As String, ByVal ciudad As String,
                                   ByVal localidad As String, ByVal precio As Integer, ByVal n_habs As Integer,
-                                  ByVal n_banios As Integer, ByVal superficie As String, ByVal ascensor As Boolean,
-                                  ByVal parking As Boolean, ByVal amueblado As Boolean, ByVal terraza As Boolean,
-                                  ByVal calefaccion As Boolean, ByVal piscina As Boolean, ByVal jardin As Boolean,
-                                  ByVal trastero As Boolean, ByVal estado As String, ByVal tipo As String) As String
+                                  ByVal n_banios As Integer, ByVal superficie As String, ByVal ascensor As Integer,
+                                  ByVal parking As Integer, ByVal amueblado As Integer, ByVal terraza As Integer,
+                                  ByVal calefaccion As Integer, ByVal piscina As Integer, ByVal jardin As Integer,
+                                  ByVal trastero As Integer, ByVal estado As String, ByVal tipo As String) As String
 
         Dim resultado As Integer
 
@@ -40,10 +40,10 @@ Public Class CADEdificio
                                       ByVal num_via As Integer, ByVal piso As Integer, ByVal letra_piso As Char,
                                       ByVal cp As Integer, ByVal pais As String, ByVal ciudad As String,
                                       ByVal localidad As String, ByVal precio As Integer, ByVal n_habs As Integer,
-                                      ByVal n_banios As Integer, ByVal superficie As String, ByVal ascensor As Boolean,
-                                      ByVal parking As Boolean, ByVal amueblado As Boolean, ByVal terraza As Boolean,
-                                      ByVal calefaccion As Boolean, ByVal piscina As Boolean, ByVal jardin As Boolean,
-                                      ByVal trastero As Boolean, ByVal estado As String, ByVal tipo As String,
+                                      ByVal n_banios As Integer, ByVal superficie As String, ByVal ascensor As Integer,
+                                      ByVal parking As Integer, ByVal amueblado As Integer, ByVal terraza As Integer,
+                                      ByVal calefaccion As Integer, ByVal piscina As Integer, ByVal jardin As Integer,
+                                      ByVal trastero As Integer, ByVal estado As String, ByVal tipo As String,
                                       ByVal id As Integer) As String
 
 

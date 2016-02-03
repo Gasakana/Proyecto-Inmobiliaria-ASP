@@ -11,7 +11,7 @@
             <div class="table-row">
                 <div class="row-data">
                     <p>
-                        <a>
+                        <a href="/Flat.aspx?id=1">
                             <img alt="foro de una casa" src="/imag/estepona-.jpg" class="flat-image"/>
                             <br />Descricion de 1
                         </a>

@@ -6,6 +6,43 @@
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         'MsgBox(HttpContext.Current.User.Identity.Name)
+
+        'Tipos de via
+        cbTipoVia.Items.Add("Avenida")
+        cbTipoVia.Items.Add("Calle")
+        cbTipoVia.Items.Add("Plaza")
+        cbTipoVia.Items.Add("Bulevar")
+        cbTipoVia.Items.Add("Paseo")
+        cbTipoVia.Items.Add("Paseo Maritimo")
+        cbTipoVia.Items.Add("Camino")
+        cbTipoVia.Items.Add("Carretera")
+        cbTipoVia.Items.Add("otro")
+
+        'Num Hab
+        For hab As Integer = 1 To 10
+            cbNumHabs.Items.Add(hab.ToString)
+        Next
+
+        'Num Banio
+        For ban As Integer = 1 To 5
+            cbNumBanios.Items.Add(ban.ToString)
+        Next
+
+        'Estado
+        cbEstado.Items.Add("A reformar")
+        cbEstado.Items.Add("Reformado")
+        cbEstado.Items.Add("Casi nuevo")
+        cbEstado.Items.Add("Muy bien")
+        cbEstado.Items.Add("Bien")
+
+        'Tipo de edificacion
+        cbTipo.Items.Add("Apartamanto")
+        cbTipo.Items.Add("Ático")
+        cbTipo.Items.Add("Chalet")
+        cbTipo.Items.Add("Dúplex")
+        cbTipo.Items.Add("Estudio")
+        cbTipo.Items.Add("Piso")
+        cbTipo.Items.Add("Planta baja")
     End Sub
 
     Protected Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
@@ -28,7 +65,6 @@
         miEdificio = Edificio.ObtenerEdificio(txtId.Text)
 
         For Each Row As DataRow In miEdificio.Rows
-            'cbTipoVia.Text = Row("tipo_via").ToString
             txtNombreVia.Text = Row("nombre_via").ToString
             txtNumVia.Text = Row("numero_via").ToString
             txtPiso.Text = Row("piso").ToString
@@ -38,40 +74,34 @@
             txtCiudad.Text = Row("ciudad").ToString
             txtLocalidad.Text = Row("localidad").ToString
             txtPrecio.Text = Row("precio").ToString
-            'cbNumHabs.Text = Row("n_habs").ToString
-            'cbNumBanios.Text = Row("n_banios").ToString
+            chAscensor.Checked = comprobarCheckBox(Row("ascensor"))
+            chParking.Checked = comprobarCheckBox(Row("parking"))
+            chAmueblado.Checked = comprobarCheckBox(Row("amueblado"))
+            chTerraza.Checked = comprobarCheckBox(Row("terraza"))
+            chCalefaccion.Checked = comprobarCheckBox(Row("calefaccion"))
+            chPiscina.Checked = comprobarCheckBox(Row("piscina"))
+            chJardin.Checked = comprobarCheckBox(Row("jardin"))
+            chTrastero.Checked = comprobarCheckBox(Row("trastero"))
             txtSuperficie.Text = Row("superficie").ToString
-
         Next
+
     End Sub
 
-    Protected Sub cbTipoVia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipoVia.SelectedIndexChanged
-        mostrarDatosEdificio()
-    End Sub
+    Private Function comprobarCheckBox(ByVal ch As Integer) As Boolean
+        If ch = 1 Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
 
-    Protected Sub cbNumHabs_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbNumHabs.SelectedIndexChanged
-        mostrarDatosEdificio()
-    End Sub
-
-    Protected Sub cbNumBanios_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbNumBanios.SelectedIndexChanged
-        mostrarDatosEdificio()
-    End Sub
-
-    Protected Sub cbTipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbEstado.SelectedIndexChanged
-        mostrarDatosEdificio()
-    End Sub
-
-    Protected Sub cmbNomCli_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipo.SelectedIndexChanged
-        mostrarDatosEdificio()
-    End Sub
-
-    Protected Sub chAscensor_CheckedChanged(sender As Object, e As EventArgs) Handles chAscensor.CheckedChanged
-        mostrarDatosEdificio()
-    End Sub
-
-    Protected Sub chParking_CheckedChanged(sender As Object, e As EventArgs) Handles chParking.CheckedChanged
-        mostrarDatosEdificio()
-    End Sub
+    Private Function insertarChecks(ByVal ch As CheckBox) As Integer
+        If ch.Checked Then
+            Return 1
+        Else
+            Return 0
+        End If
+    End Function
 
     Protected Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
         If txtId.Text = "" Then
@@ -165,9 +195,9 @@
                                                           txtLetraPiso.Text, Convert.ToInt32(txtCP.Text), txtPais.Text,
                                                           txtCiudad.Text, txtLocalidad.Text, Convert.ToInt32(txtPrecio.Text),
                                                           Convert.ToInt32(cbNumHabs.Text), Convert.ToInt32(cbNumBanios.Text),
-                                                          txtSuperficie.Text, chAscensor.Checked.ToString, chParking.Checked.ToString,
-                                                          chAmueblado.Checked.ToString, chTerraza.Checked.ToString, chCalefaccion.Checked.ToString,
-                                                          chPiscina.Checked.ToString, chJardin.Checked.ToString, chTrastero.Checked.ToString,
+                                                          txtSuperficie.Text, insertarChecks(chAscensor), insertarChecks(chParking),
+                                                          insertarChecks(chAmueblado), insertarChecks(chTerraza), insertarChecks(chCalefaccion),
+                                                          insertarChecks(chPiscina), insertarChecks(chJardin), insertarChecks(chTrastero),
                                                           cbEstado.Text, cbTipo.Text)
 
             GVEdificios.DataBind()
@@ -176,7 +206,8 @@
 
     Protected Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
         txtId.Text = ""
-        'cbTipoVia
+        cbTipoVia.Dispose()
+        cbTipoVia.DataBind()
         txtNombreVia.Text = ""
         txtNumVia.Text = ""
         txtPiso.Text = ""
@@ -186,8 +217,10 @@
         txtCiudad.Text = ""
         txtLocalidad.Text = ""
         txtPrecio.Text = ""
-        'cbNumHabs
-        'cbNumBanios
+        cbNumHabs.Dispose()
+        cbNumHabs.DataBind()
+        cbNumBanios.Dispose()
+        cbEstado.DataBind()
         txtSuperficie.Text = ""
         chAscensor.Checked = False
         chParking.Checked = False
@@ -197,8 +230,10 @@
         chPiscina.Checked = False
         chJardin.Checked = False
         chTrastero.Checked = False
-        'cbEstado
-        'cbTipo
+        cbEstado.Dispose()
+        cbEstado.DataBind()
+        cbTipo.Dispose()
+        cbTipo.DataBind()
         txtId.Focus()
     End Sub
 
@@ -294,9 +329,9 @@
                                                           txtLetraPiso.Text, Convert.ToInt32(txtCP.Text), txtPais.Text,
                                                           txtCiudad.Text, txtLocalidad.Text, Convert.ToInt32(txtPrecio.Text),
                                                           Convert.ToInt32(cbNumHabs.Text), Convert.ToInt32(cbNumBanios.Text),
-                                                          txtSuperficie.Text, chAscensor.Checked.ToString, chParking.Checked.ToString,
-                                                          chAmueblado.Checked.ToString, chTerraza.Checked.ToString, chCalefaccion.Checked.ToString,
-                                                          chPiscina.Checked.ToString, chJardin.Checked.ToString, chTrastero.Checked.ToString,
+                                                          txtSuperficie.Text, insertarChecks(chAscensor), insertarChecks(chParking),
+                                                          insertarChecks(chAmueblado), insertarChecks(chTerraza), insertarChecks(chCalefaccion),
+                                                          insertarChecks(chPiscina), insertarChecks(chJardin), insertarChecks(chTrastero),
                                                           cbEstado.Text, cbTipo.Text, Convert.ToInt32(txtId.Text))
 
             GVEdificios.DataBind()

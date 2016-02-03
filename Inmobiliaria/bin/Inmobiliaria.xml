@@ -62,9 +62,17 @@ Control MainContent.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:Inmobiliaria.WebForm1.lblUsernme">
+</member><member name="F:Inmobiliaria.WebForm1.lblFlatName">
 	<summary>
-lblUsernme control.
+lblFlatName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Inmobiliaria.WebForm1.Descripcion">
+	<summary>
+Descripcion control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -73,6 +81,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:Inmobiliaria.WebForm1.imagenPiso">
 	<summary>
 imagenPiso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Inmobiliaria.WebForm1.NumMetros">
+	<summary>
+NumMetros control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Inmobiliaria.WebForm1.NumHab">
+	<summary>
+NumHab control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Inmobiliaria.WebForm1.NumBanios">
+	<summary>
+NumBanios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Inmobiliaria.WebForm1.TablaDatos">
+	<summary>
+TablaDatos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Inmobiliaria.WebForm1.Price">
+	<summary>
+Price control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -105,6 +153,14 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:Inmobiliaria.Admin.cbTipoVia">
 	<summary>
 Control cbTipoVia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.Admin.EdificiosDataSource">
+	<summary>
+Control EdificiosDataSource.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -336,7 +392,7 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </remarks>
 </member><member name="F:Inmobiliaria.Admin.GVEdificios">
 	<summary>
-Control GridView1.
+Control GVEdificios.
 </summary>
 	<remarks>
 Campo generado automáticamente.

@@ -14,13 +14,22 @@ Option Explicit On
 Partial Public Class WebForm1
 
     '''<summary>
-    '''lblUsernme control.
+    '''lblFlatName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblUsernme As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblFlatName As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Descripcion control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Descripcion As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''imagenPiso control.
@@ -30,4 +39,49 @@ Partial Public Class WebForm1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents imagenPiso As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''NumMetros control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents NumMetros As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''NumHab control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents NumHab As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''NumBanios control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents NumBanios As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TablaDatos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TablaDatos As Global.System.Web.UI.WebControls.Table
+
+    '''<summary>
+    '''Price control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Price As Global.System.Web.UI.WebControls.Label
 End Class

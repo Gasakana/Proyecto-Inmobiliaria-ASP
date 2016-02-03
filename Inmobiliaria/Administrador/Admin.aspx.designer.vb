@@ -32,6 +32,15 @@ Partial Public Class Admin
     Protected WithEvents cbTipoVia As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''Control EdificiosDataSource.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents EdificiosDataSource As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''Control txtNombreVia.
     '''</summary>
     '''<remarks>
