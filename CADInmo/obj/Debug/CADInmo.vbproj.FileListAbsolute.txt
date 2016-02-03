@@ -1,0 +1,9 @@
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\bin\Debug\CADInmo.dll.config
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\bin\Debug\CADInmo.dll
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\bin\Debug\CADInmo.pdb
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\bin\Debug\CADInmo.xml
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\obj\Debug\CADInmo.Resources.resources
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\obj\Debug\CADInmo.vbproj.GenerateResource.Cache
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\obj\Debug\CADInmo.dll
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\obj\Debug\CADInmo.xml
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\CADInmo\obj\Debug\CADInmo.pdb

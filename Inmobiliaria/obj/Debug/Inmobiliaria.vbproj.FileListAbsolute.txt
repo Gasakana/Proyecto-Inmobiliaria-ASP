@@ -22,3 +22,7 @@ C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\De
 C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.dll
 C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.xml
 C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\bin\CADInmo.dll
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\bin\CADInmo.pdb
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\bin\CADInmo.xml
+C:\Users\Gasakana\Documents\GitHub\Proyecto-Inmobiliaria-ASP\Inmobiliaria\obj\Debug\Inmobiliaria.vbprojResolveAssemblyReference.cache

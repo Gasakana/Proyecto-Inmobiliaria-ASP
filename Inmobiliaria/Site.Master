@@ -22,7 +22,7 @@
                         <img id="logotipo"src="/imag/logotipo.png" />
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        <a href="~/Administrador/Admin.aspx"><img id="logotipo"src="/imag/logotipo.png" /></a>
+                        <a href="/Administrador/Admin.aspx"><img id="logotipo"src="/imag/logotipo.png" /></a>
                     </LoggedInTemplate>
                 </asp:LoginView>
                    
