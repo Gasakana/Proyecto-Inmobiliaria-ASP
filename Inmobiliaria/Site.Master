@@ -49,10 +49,7 @@
                     </Items>
             </asp:Menu>
           
-                <div  style="position: relative; top: -6px; left: 847px;">
-                    <asp:TextBox ID="TextBox1" runat="server" style="width: 191px" >Encuentra tu casa ideal...</asp:TextBox>
-                    <asp:ImageButton ID="ImageButton1" src="/imag/lupa.jpg" runat="server" style="width: 22px; margin: 0px 0px 0px 3px; position: relative; bottom: -5px;"/>
-                </div>
+                
                 
             </div>
             

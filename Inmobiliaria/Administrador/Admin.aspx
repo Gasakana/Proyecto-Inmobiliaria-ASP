@@ -10,6 +10,10 @@
             width: 147px;
             text-align: right;
         }
+        .style3
+        {
+            width: 233px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -19,7 +23,7 @@
         <tr>
             <td class="style2">
                 Id:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -28,12 +32,20 @@
         <tr>
             <td class="style2">
                 Tipo de vía:&nbsp;</td>
-            <td>
-                <asp:DropDownList ID="cbTipoVia" runat="server" Height="16px" Width="129px"  
-                    DataSourceID="EdificiosDataSource" DataTextField="tipo_via" DataValueField="id">
+            <td class="style3">
+                <asp:DropDownList ID="cbTipoVia" runat="server" Height="16px" Width="154px"  >
+                    <asp:ListItem>Avenida</asp:ListItem>
+                    <asp:ListItem>Calle</asp:ListItem>
+                    <asp:ListItem>Plaza</asp:ListItem>
+                    <asp:ListItem>Bulevar</asp:ListItem>
+                    <asp:ListItem>Paseo</asp:ListItem>
+                    <asp:ListItem>Paseo Marítimo</asp:ListItem>
+                    <asp:ListItem>Camino</asp:ListItem>
+                    <asp:ListItem>Carretera</asp:ListItem>
+                    <asp:ListItem>Otro</asp:ListItem>
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="EdificiosDataSource" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:InmobiliariaConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:inmobiliariaConnectionString %>" 
                     SelectCommand="SELECT [id], [tipo_via], [nombre_via], [numero_via], [piso], [letra_piso], [cp], [pais], [ciudad], [localidad], [precio], [n_habs], [n_banios], [superficie], [ascensor], [parking], [amueblado], [terraza], [calefaccion], [piscina], [jardin], [trastero], [estado], [tipo] FROM [Edificios]">
                 </asp:SqlDataSource>
             </td>
@@ -43,7 +55,7 @@
         <tr>
             <td class="style2">
                 Nombre de la vía:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtNombreVia" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -52,7 +64,7 @@
         <tr>
             <td class="style2">
                 Número de la vía:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtNumVia" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -61,7 +73,7 @@
         <tr>
             <td class="style2">
                 Piso:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtPiso" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -70,7 +82,7 @@
         <tr>
             <td class="style2">
                 Letra del piso:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtLetraPiso" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -79,7 +91,7 @@
         <tr>
             <td class="style2">
                 Código postal:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtCP" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -88,7 +100,7 @@
         <tr>
             <td class="style2">
                 País:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtPais" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -97,7 +109,7 @@
         <tr>
             <td class="style2">
                 Ciudad:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtCiudad" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -106,7 +118,7 @@
         <tr>
             <td class="style2">
                 Localidad:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtLocalidad" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -115,7 +127,7 @@
         <tr>
             <td class="style2">
                 Precio:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -124,9 +136,18 @@
         <tr>
             <td class="style2">
                 Número de habitaciones:</td>
-            <td>
-                <asp:DropDownList ID="cbNumHabs" runat="server" Height="19px" Width="127px" 
-                    DataSourceID="EdificiosDataSource" DataTextField="n_habs" DataValueField="id">
+            <td class="style3">
+                <asp:DropDownList ID="cbNumHabs" runat="server" Height="19px" Width="154px" >
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
+                    <asp:ListItem>6</asp:ListItem>
+                    <asp:ListItem>7</asp:ListItem>
+                    <asp:ListItem>8</asp:ListItem>
+                    <asp:ListItem>9</asp:ListItem>
+                    <asp:ListItem>10</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>
@@ -135,9 +156,13 @@
         <tr>
             <td class="style2">
                 Número de baños:</td>
-            <td>
-                <asp:DropDownList ID="cbNumBanios" runat="server" Width="127px" 
-                    DataSourceID="EdificiosDataSource" DataTextField="n_banios" DataValueField="id">
+            <td class="style3">
+                <asp:DropDownList ID="cbNumBanios" runat="server" Width="153px" >
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>
@@ -146,7 +171,7 @@
         <tr>
             <td class="style2">
                 Superficie:</td>
-            <td>
+            <td class="style3">
                 <asp:TextBox ID="txtSuperficie" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -155,8 +180,8 @@
         <tr>
             <td class="style2">
                 Ascensor:</td>
-            <td>
-                <asp:CheckBox ID="chAscensor" runat="server" AutoPostBack="true" Checked='<%# Eval("ascensor") %>' Width="127px" />
+            <td class="style3">
+                <asp:CheckBox ID="chAscensor" runat="server" Checked='<%# Eval("ascensor") %>' Width="127px" />
             </td>
             <td>
                 &nbsp;</td>
@@ -164,8 +189,8 @@
         <tr>
             <td class="style2">
                 Parking:</td>
-            <td>
-                <asp:CheckBox ID="chParking" runat="server" AutoPostBack="true" Checked='<%# Eval("parking") %>' Width="127px" />
+            <td class="style3">
+                <asp:CheckBox ID="chParking" runat="server" Checked='<%# Eval("parking") %>' Width="127px" />
             </td>
             <td>
                 &nbsp;</td>
@@ -173,7 +198,7 @@
         <tr>
             <td class="style2">
                 Amueblado:</td>
-            <td>
+            <td class="style3">
                 <asp:CheckBox ID="chAmueblado" runat="server" Checked='<%# Eval("amueblado") %>' Width="127px" />
             </td>
             <td>
@@ -182,7 +207,7 @@
         <tr>
             <td class="style2">
                 Terraza:</td>
-            <td>
+            <td class="style3">
                 <asp:CheckBox ID="chTerraza" runat="server" Checked='<%# Eval("terraza") %>' Width="127px" />
             </td>
             <td>
@@ -191,7 +216,7 @@
         <tr>
             <td class="style2">
                 Calefacción:</td>
-            <td>
+            <td class="style3">
                 <asp:CheckBox ID="chCalefaccion" runat="server" Checked='<%# Eval("calefaccion") %>' Width="127px" />
             </td>
             <td>
@@ -200,7 +225,7 @@
         <tr>
             <td class="style2">
                 Piscina:</td>
-            <td>
+            <td class="style3">
                 <asp:CheckBox ID="chPiscina" runat="server" Checked='<%# Eval("piscina") %>' Width="127px" />
             </td>
             <td>
@@ -209,7 +234,7 @@
         <tr>
             <td class="style2">
                 Jardín:</td>
-            <td>
+            <td class="style3">
                 <asp:CheckBox ID="chJardin" runat="server" Checked='<%# Eval("jardin") %>' Width="127px"/>
             </td>
             <td>
@@ -218,7 +243,7 @@
         <tr>
             <td class="style2">
                 Trastero:</td>
-            <td>
+            <td class="style3">
                 <asp:CheckBox ID="chTrastero" runat="server" Checked='<%# Eval("trastero") %>' Width="127px"/>
             </td>
             <td>
@@ -227,10 +252,15 @@
         <tr>
             <td class="style2">
                 Estado:</td>
-            <td>
-                <asp:DropDownList ID="cbEstado" runat="server" Width="127px" 
-                    DataSourceID="EdificiosDataSource" DataTextField="estado" DataValueField="id">
+            <td class="style3">
+                <asp:DropDownList ID="cbEstado" runat="server" Width="154px" >
+                    <asp:ListItem>A reformar</asp:ListItem>
+                    <asp:ListItem>Reformado</asp:ListItem>
+                    <asp:ListItem>Casi nuevo</asp:ListItem>
+                    <asp:ListItem>Muy bien</asp:ListItem>
+                    <asp:ListItem>Bien</asp:ListItem>
                 </asp:DropDownList>
+
             </td>
             <td>
                 &nbsp;</td>
@@ -238,9 +268,15 @@
         <tr>
             <td class="style2">
                 Tipo:</td>
-            <td>
-                <asp:DropDownList ID="cbTipo" runat="server" Width="127px" 
-                    DataSourceID="EdificiosDataSource" DataTextField="tipo" DataValueField="id">
+            <td class="style3">
+                <asp:DropDownList ID="cbTipo" runat="server" Width="154px" >
+                    <asp:ListItem>Apartamento</asp:ListItem>
+                    <asp:ListItem>Ático</asp:ListItem>
+                    <asp:ListItem>Chalet</asp:ListItem>
+                    <asp:ListItem>Dúplex</asp:ListItem>
+                    <asp:ListItem>Estudio</asp:ListItem>
+                    <asp:ListItem>Piso</asp:ListItem>
+                    <asp:ListItem>Planta baja</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>

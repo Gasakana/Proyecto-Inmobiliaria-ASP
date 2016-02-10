@@ -7,85 +7,71 @@
     <h2>Busca, ojea y encuentra tu piso ideal.</h2>
     <div >
         <p>Pisos recomendados para ti:</p>
-        <div id="flatContainer" class="table-container">
-            <div class="table-row">
-                <div class="row-data">
-                    <p>
-                        <a href="/Flat.aspx?id=1">
-                            <img alt="foro de una casa" src="/imag/estepona-.jpg" class="flat-image"/>
-                            <br />Descricion de 1
-                        </a>
-                    </p
-                </div>
-                <div class="row-data">
-                    <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/Pisos-para-cocinas.jpg" class="flat-image"/>
-                            <br />Descricion de 2
-                        </a>
-                    </p>
-                </div>
-                <div class="row-data">
-                    <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/Ventajas.jpg" class="flat-image"/>
-                            <br />Descricion de 3
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="table-row">
-                <div class="row-data">
-                   <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/Ventajas.jpg" class="flat-image"/>
-                            <br />Descricion de 4
-                        </a>
-                    </p>
-                </div>
-                <div class="row-data">
-                    <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/estepona-.jpg" class="flat-image"/>
-                            <br />Descricion de 5
-                        </a>
-                    </p>
-                </div>
-                <div class="row-data">
-                    <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/Pisos-para-cocinas.jpg" class="flat-image"/>
-                            <br />Descricion de 6
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="table-row">
-                <div class="row-data">
-                    <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/Pisos-para-cocinas.jpg" class="flat-image"/>
-                            <br />Descricion de 7
-                        </a>
-                    </p>
-                </div>
-                <div class="row-data">
-                   <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/Ventajas.jpg" class="flat-image"/>
-                            <br />Descricion de 8
-                        </a>
-                    </p>
-                </div>
-                <div class="row-data">
-                    <p>
-                        <a>
-                            <img alt="foro de una casa" src="/imag/estepona-.jpg" class="flat-image"/>
-                            <br />Descricion de 9
-                        </a>
-                    </p>
-                </div>
-            </div>
+        <div class="table-container">
+            <asp:Table ID="Table1" runat="server" CssClass="table-body">
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink1" runat="server">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink2" runat="server">
+                        <asp:Image ID="Image2" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink3" runat="server">
+                        <asp:Image ID="Image3" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink4" runat="server">
+                        <asp:Image ID="Image4" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink5" runat="server">
+                        <asp:Image ID="Image5" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink6" runat="server">
+                        <asp:Image ID="Image6" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink7" runat="server">
+                        <asp:Image ID="Image7" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink8" runat="server">
+                        <asp:Image ID="Image8" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:HyperLink ID="HyperLink9" runat="server">
+                        <asp:Image ID="Image9" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <br />HyperLink
+                     </asp:HyperLink>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+    <asp:Button ID="Button1" runat="server" Text="Button" />
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
     </div>
 

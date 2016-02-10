@@ -2,14 +2,15 @@
 <xs:schema id="DSInmo" targetNamespace="http://tempuri.org/DSInmo.xsd" xmlns:mstns="http://tempuri.org/DSInmo.xsd" xmlns="http://tempuri.org/DSInmo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="InmobiliariaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InmobiliariaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CADInmo.My.MySettings.GlobalReference.Default.InmobiliariaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="InmobiliariaConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="InmobiliariaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CADInmo.My.MySettings.GlobalReference.Default.InmobiliariaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="inmobiliariaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="inmobiliariaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CADInmo.My.MySettings.GlobalReference.Default.inmobiliariaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EdificiosTableAdapter" GeneratorDataComponentClassName="EdificiosTableAdapter" Name="Edificios" UserDataComponentName="EdificiosTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="InmobiliariaConnectionString (MySettings)" DbObjectName="Inmobiliaria.dbo.Edificios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="inmobiliariaConnectionString (MySettings)" DbObjectName="Inmobiliaria.dbo.Edificios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Edificios] WHERE (([id] = @Original_id) AND ((@IsNull_tipo_via = 1 AND [tipo_via] IS NULL) OR ([tipo_via] = @Original_tipo_via)) AND ((@IsNull_nombre_via = 1 AND [nombre_via] IS NULL) OR ([nombre_via] = @Original_nombre_via)) AND ((@IsNull_numero_via = 1 AND [numero_via] IS NULL) OR ([numero_via] = @Original_numero_via)) AND ((@IsNull_piso = 1 AND [piso] IS NULL) OR ([piso] = @Original_piso)) AND ((@IsNull_letra_piso = 1 AND [letra_piso] IS NULL) OR ([letra_piso] = @Original_letra_piso)) AND ((@IsNull_cp = 1 AND [cp] IS NULL) OR ([cp] = @Original_cp)) AND ((@IsNull_pais = 1 AND [pais] IS NULL) OR ([pais] = @Original_pais)) AND ((@IsNull_ciudad = 1 AND [ciudad] IS NULL) OR ([ciudad] = @Original_ciudad)) AND ((@IsNull_localidad = 1 AND [localidad] IS NULL) OR ([localidad] = @Original_localidad)) AND ((@IsNull_precio = 1 AND [precio] IS NULL) OR ([precio] = @Original_precio)) AND ((@IsNull_n_habs = 1 AND [n_habs] IS NULL) OR ([n_habs] = @Original_n_habs)) AND ((@IsNull_n_banios = 1 AND [n_banios] IS NULL) OR ([n_banios] = @Original_n_banios)) AND ((@IsNull_superficie = 1 AND [superficie] IS NULL) OR ([superficie] = @Original_superficie)) AND ([ascensor] = @Original_ascensor) AND ([parking] = @Original_parking) AND ([amueblado] = @Original_amueblado) AND ([terraza] = @Original_terraza) AND ([calefaccion] = @Original_calefaccion) AND ([piscina] = @Original_piscina) AND ([jardin] = @Original_jardin) AND ([trastero] = @Original_trastero) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_tipo = 1 AND [tipo] IS NULL) OR ([tipo] = @Original_tipo)))</CommandText>
@@ -193,7 +194,7 @@ SELECT id, tipo_via, nombre_via, numero_via, piso, letra_piso, cp, pais, ciudad,
               <Mapping SourceColumn="tipo" DataSetColumn="tipo" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="InmobiliariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarEdificio" Modifier="Public" Name="ActualizarEdificio" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ActualizarEdificio">
+              <DbSource ConnectionRef="inmobiliariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ActualizarEdificio" Modifier="Public" Name="ActualizarEdificio" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ActualizarEdificio">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE Edificios SET 
@@ -251,7 +252,7 @@ WHERE id = @id</CommandText>
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="InmobiliariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="EliminarEdificio" Modifier="Public" Name="EliminarEdificio" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="EliminarEdificio">
+              <DbSource ConnectionRef="inmobiliariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="EliminarEdificio" Modifier="Public" Name="EliminarEdificio" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="EliminarEdificio">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM Edificios 
@@ -262,7 +263,7 @@ WHERE id =@id</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="InmobiliariaConnectionString (MySettings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ExisteEdificio" Modifier="Public" Name="ExisteEdificio" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ExisteEdificio">
+              <DbSource ConnectionRef="inmobiliariaConnectionString (MySettings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ExisteEdificio" Modifier="Public" Name="ExisteEdificio" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ExisteEdificio">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) 
@@ -274,7 +275,7 @@ WHERE id = @ID</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="InmobiliariaConnectionString (MySettings)" DbObjectName="Inmobiliaria.dbo.Edificios" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetEdificio" GetMethodModifier="Public" GetMethodName="GetEdificio" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetEdificio" UserSourceName="GetEdificio">
+              <DbSource ConnectionRef="inmobiliariaConnectionString (MySettings)" DbObjectName="Inmobiliaria.dbo.Edificios" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetEdificio" GetMethodModifier="Public" GetMethodName="GetEdificio" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetEdificio" UserSourceName="GetEdificio">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT id, tipo_via, nombre_via, numero_via, piso, letra_piso, cp, pais, ciudad, localidad, precio, n_habs, n_banios, superficie, ascensor, parking, amueblado, terraza, calefaccion, piscina, jardin, trastero, estado, tipo 
@@ -283,6 +284,24 @@ WHERE id = @ID</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="id" DataSourceName="Inmobiliaria.dbo.Edificios" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="inmobiliariaConnectionString (MySettings)" DbObjectName="Inmobiliaria.dbo.Edificios" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="ObtenerEdificios" GetMethodModifier="Public" GetMethodName="ObtenerEdificios" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="ObtenerEdificios" UserSourceName="ObtenerEdificios">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * 
+FROM Edificios</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="inmobiliariaConnectionString (MySettings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ObtenerNumEdificios" Modifier="Public" Name="ObtenerNumEdificios" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ObtenerNumEdificios">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) 
+FROM Edificios</CommandText>
+                    <Parameters />
                   </DbCommand>
                 </SelectCommand>
               </DbSource>

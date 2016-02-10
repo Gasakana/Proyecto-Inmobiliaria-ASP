@@ -57,11 +57,10 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-ATTQN48\SQLEXPRESS;Initial Catalog=Inmobiliaria;Integrated Se"& _ 
-            "curity=True")>  _
-        Public ReadOnly Property InmobiliariaConnectionString() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.\SQLEXPRESS;Initial Catalog=Inmobiliaria;Integrated Security=True")>  _
+        Public ReadOnly Property inmobiliariaConnectionString() As String
             Get
-                Return CType(Me("InmobiliariaConnectionString"),String)
+                Return CType(Me("inmobiliariaConnectionString"),String)
             End Get
         End Property
     End Class

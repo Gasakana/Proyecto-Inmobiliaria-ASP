@@ -5,44 +5,6 @@
     Dim EdificioNuevo As New CADInmo.CADEdificio
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        'MsgBox(HttpContext.Current.User.Identity.Name)
-
-        'Tipos de via
-        cbTipoVia.Items.Add("Avenida")
-        cbTipoVia.Items.Add("Calle")
-        cbTipoVia.Items.Add("Plaza")
-        cbTipoVia.Items.Add("Bulevar")
-        cbTipoVia.Items.Add("Paseo")
-        cbTipoVia.Items.Add("Paseo Maritimo")
-        cbTipoVia.Items.Add("Camino")
-        cbTipoVia.Items.Add("Carretera")
-        cbTipoVia.Items.Add("otro")
-
-        'Num Hab
-        For hab As Integer = 1 To 10
-            cbNumHabs.Items.Add(hab.ToString)
-        Next
-
-        'Num Banio
-        For ban As Integer = 1 To 5
-            cbNumBanios.Items.Add(ban.ToString)
-        Next
-
-        'Estado
-        cbEstado.Items.Add("A reformar")
-        cbEstado.Items.Add("Reformado")
-        cbEstado.Items.Add("Casi nuevo")
-        cbEstado.Items.Add("Muy bien")
-        cbEstado.Items.Add("Bien")
-
-        'Tipo de edificacion
-        cbTipo.Items.Add("Apartamanto")
-        cbTipo.Items.Add("Ático")
-        cbTipo.Items.Add("Chalet")
-        cbTipo.Items.Add("Dúplex")
-        cbTipo.Items.Add("Estudio")
-        cbTipo.Items.Add("Piso")
-        cbTipo.Items.Add("Planta baja")
     End Sub
 
     Protected Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
@@ -54,8 +16,8 @@
             txtId.Focus()
         Else
             mostrarDatosEdificio()
+            lblMensaje.Text = "Datos del Edificio"
         End If
-        lblMensaje.Text = "Datos del Edificio"
     End Sub
 
     Private Sub mostrarDatosEdificio()
@@ -65,6 +27,12 @@
         miEdificio = Edificio.ObtenerEdificio(txtId.Text)
 
         For Each Row As DataRow In miEdificio.Rows
+            igualarCombos(cbTipoVia, Row("tipo_via").ToString)
+            igualarCombos(cbNumHabs, Row("n_habs").ToString)
+            igualarCombos(cbNumBanios, Row("n_banios").ToString)
+            igualarCombos(cbEstado, Row("estado").ToString)
+            igualarCombos(cbTipo, Row("tipo").ToString)
+            igualarCombos(cbTipoVia, Row("tipo_via").ToString)
             txtNombreVia.Text = Row("nombre_via").ToString
             txtNumVia.Text = Row("numero_via").ToString
             txtPiso.Text = Row("piso").ToString
@@ -84,7 +52,16 @@
             chTrastero.Checked = comprobarCheckBox(Row("trastero"))
             txtSuperficie.Text = Row("superficie").ToString
         Next
+    End Sub
 
+    Private Sub igualarCombos(combo As DropDownList, texto As String)
+        Dim j As Integer = 0
+        For Each item As ListItem In combo.Items
+            If item.Text = texto Then
+                combo.SelectedIndex = j
+            End If
+            j = j + 1
+        Next
     End Sub
 
     Private Function comprobarCheckBox(ByVal ch As Integer) As Boolean

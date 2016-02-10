@@ -12,6 +12,10 @@ Public Class CADEdificio
         Return (adaptadorEdificio.ExisteEdificio(IDEdificio) = 1)
     End Function
 
+    Public Function ObtenerEdificios() As DSInmo.EdificiosDataTable
+        Return adaptadorEdificio.ObtenerEdificios()
+    End Function
+
     Public Function NuevoEdificio(ByVal id As Integer, ByVal tipo_via As String, ByVal nombre_via As String,
                                   ByVal num_via As Integer, ByVal piso As Integer, ByVal letra_piso As Char,
                                   ByVal cp As Integer, ByVal pais As String, ByVal ciudad As String,
@@ -72,6 +76,10 @@ Public Class CADEdificio
         Else
             Return "Registro borrado correctamente"
         End If
+    End Function
+
+    Public Function NumFilas() As Integer
+        Return adaptadorEdificio.ObtenerNumEdificios()
     End Function
 
 End Class
