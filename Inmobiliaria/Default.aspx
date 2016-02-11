@@ -12,7 +12,7 @@
             <asp:TableRow>
                 <asp:TableCell>
                     <asp:HyperLink ID="HyperLink1" runat="server">
-                        <asp:Image ID="Image1" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image" />
+                        <asp:Image ID="Image1" runat="server" ImageUrl="/imag/estepona-.jpg" CssClass="flat-image"  />
                         <br />HyperLink
                      </asp:HyperLink>
                 </asp:TableCell>
@@ -70,8 +70,6 @@
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
-    <asp:Button ID="Button1" runat="server" Text="Button" />
-    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
     </div>
 

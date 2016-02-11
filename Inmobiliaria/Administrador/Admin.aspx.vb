@@ -170,7 +170,7 @@
             lblMensaje.Text = EdificioNuevo.NuevoEdificio(Convert.ToInt32(txtId.Text), cbTipoVia.Text, txtNombreVia.Text,
                                                           Convert.ToInt32(txtNumVia.Text), Convert.ToInt32(txtPiso.Text),
                                                           txtLetraPiso.Text, Convert.ToInt32(txtCP.Text), txtPais.Text,
-                                                          txtCiudad.Text, txtLocalidad.Text, Convert.ToInt32(txtPrecio.Text),
+                                                          txtCiudad.Text, txtLocalidad.Text, Convert.ToDecimal(txtPrecio.Text),
                                                           Convert.ToInt32(cbNumHabs.Text), Convert.ToInt32(cbNumBanios.Text),
                                                           txtSuperficie.Text, insertarChecks(chAscensor), insertarChecks(chParking),
                                                           insertarChecks(chAmueblado), insertarChecks(chTerraza), insertarChecks(chCalefaccion),
@@ -178,40 +178,14 @@
                                                           cbEstado.Text, cbTipo.Text)
 
             GVEdificios.DataBind()
+            limpiarDatos()
+            txtId.Focus()
         End If
     End Sub
 
     Protected Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
-        txtId.Text = ""
-        cbTipoVia.Dispose()
-        cbTipoVia.DataBind()
-        txtNombreVia.Text = ""
-        txtNumVia.Text = ""
-        txtPiso.Text = ""
-        txtLetraPiso.Text = ""
-        txtCP.Text = ""
-        txtPais.Text = ""
-        txtCiudad.Text = ""
-        txtLocalidad.Text = ""
-        txtPrecio.Text = ""
-        cbNumHabs.Dispose()
-        cbNumHabs.DataBind()
-        cbNumBanios.Dispose()
-        cbEstado.DataBind()
-        txtSuperficie.Text = ""
-        chAscensor.Checked = False
-        chParking.Checked = False
-        chAmueblado.Checked = False
-        chTerraza.Checked = False
-        chCalefaccion.Checked = False
-        chPiscina.Checked = False
-        chJardin.Checked = False
-        chTrastero.Checked = False
-        cbEstado.Dispose()
-        cbEstado.DataBind()
-        cbTipo.Dispose()
-        cbTipo.DataBind()
-        txtId.Focus()
+        limpiarDatos()
+        lblMensaje.Text = ""
     End Sub
 
     Protected Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
@@ -304,7 +278,7 @@
             lblMensaje.Text = EdificioNuevo.ModificarEdificio(cbTipoVia.Text, txtNombreVia.Text,
                                                           Convert.ToInt32(txtNumVia.Text), Convert.ToInt32(txtPiso.Text),
                                                           txtLetraPiso.Text, Convert.ToInt32(txtCP.Text), txtPais.Text,
-                                                          txtCiudad.Text, txtLocalidad.Text, Convert.ToInt32(txtPrecio.Text),
+                                                          txtCiudad.Text, txtLocalidad.Text, Convert.ToDecimal(txtPrecio.Text),
                                                           Convert.ToInt32(cbNumHabs.Text), Convert.ToInt32(cbNumBanios.Text),
                                                           txtSuperficie.Text, insertarChecks(chAscensor), insertarChecks(chParking),
                                                           insertarChecks(chAmueblado), insertarChecks(chTerraza), insertarChecks(chCalefaccion),
@@ -330,11 +304,14 @@
         End If
 
         lblMensaje.Text = EdificioNuevo.BorrarCliente(txtId.Text)
-
         GVEdificios.DataBind()
+        limpiarDatos()
+        txtId.Focus()
+    End Sub
 
+    Private Sub limpiarDatos()
         txtId.Text = ""
-        'cbTipoVia
+        cbTipoVia.SelectedIndex = 0
         txtNombreVia.Text = ""
         txtNumVia.Text = ""
         txtPiso.Text = ""
@@ -344,8 +321,8 @@
         txtCiudad.Text = ""
         txtLocalidad.Text = ""
         txtPrecio.Text = ""
-        'cbNumHabs
-        'cbNumBanios
+        cbNumHabs.SelectedIndex = 0
+        cbNumBanios.SelectedIndex = 0
         txtSuperficie.Text = ""
         chAscensor.Checked = False
         chParking.Checked = False
@@ -355,8 +332,8 @@
         chPiscina.Checked = False
         chJardin.Checked = False
         chTrastero.Checked = False
-        'cbEstado
-        'cbTipo
+        cbEstado.SelectedIndex = 0
+        cbTipo.SelectedIndex = 0
         txtId.Focus()
     End Sub
 End Class

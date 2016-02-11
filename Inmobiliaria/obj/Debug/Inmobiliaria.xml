@@ -286,22 +286,6 @@ Control Image9.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:Inmobiliaria._Default.Button1">
-	<summary>
-Control Button1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:Inmobiliaria._Default.Label1">
-	<summary>
-Control Label1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
 </member><member name="F:Inmobiliaria.Admin.txtId">
 	<summary>
 Control txtId.
@@ -553,14 +537,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:Inmobiliaria.Admin.GVEdificios">
 	<summary>
 Control GVEdificios.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:Inmobiliaria.Admin.LoginName1">
-	<summary>
-Control LoginName1.
 </summary>
 	<remarks>
 Campo generado automáticamente.

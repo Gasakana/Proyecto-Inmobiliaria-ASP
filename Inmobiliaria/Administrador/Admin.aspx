@@ -284,7 +284,7 @@
         </tr>
     </table>
     <br />
-    <asp:Label ID="lblMensaje" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="lblMensaje" runat="server"></asp:Label>
     <br />
     <br />
     <asp:Button ID="btnBuscar" runat="server" Text="Buscar" />
@@ -294,8 +294,11 @@
 &nbsp;<asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" />
     <br />
     <br />
+    <div style="font-size: 10px">
     <asp:GridView ID="GVEdificios" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="id" DataSourceID="EdificiosDataSource">
+        DataKeyNames="id" DataSourceID="EdificiosDataSource" CellPadding="2" 
+            ForeColor="#333333" GridLines="None">
+        <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" 
                 ReadOnly="True" SortExpression="id" />
@@ -342,8 +345,18 @@
                 SortExpression="estado" />
             <asp:BoundField DataField="tipo" HeaderText="tipo" SortExpression="tipo" />
         </Columns>
+        <EditRowStyle BackColor="#2461BF" />
+        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#EFF3FB" />
+        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+        <SortedAscendingCellStyle BackColor="#F5F7FB" />
+        <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+        <SortedDescendingCellStyle BackColor="#E9EBEF" />
+        <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
+    </div>
     <br />
     
-    <asp:LoginName ID="LoginName1" runat="server" />
-</asp:Content>
+    </asp:Content>
