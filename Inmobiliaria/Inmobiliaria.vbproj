@@ -93,6 +93,8 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Administrador\Admin.aspx" />
+    <Content Include="BusquedaAvanzada.aspx" />
+    <Content Include="ResultadoBusqueda.aspx" />
     <Content Include="imag\lupa.jpg" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -157,6 +159,20 @@
     </Compile>
     <Compile Include="Administrador\Admin.aspx.vb">
       <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaAvanzada.aspx.designer.vb">
+      <DependentUpon>BusquedaAvanzada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaAvanzada.aspx.vb">
+      <DependentUpon>BusquedaAvanzada.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ResultadoBusqueda.aspx.designer.vb">
+      <DependentUpon>ResultadoBusqueda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadoBusqueda.aspx.vb">
+      <DependentUpon>ResultadoBusqueda.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">

@@ -6,7 +6,15 @@ Inmobiliaria
 </name>
 </assembly>
 <members>
-<member name="F:Inmobiliaria.Site.HeadContent">
+<member name="F:Inmobiliaria.ResultadoBúsqueda.lblTxt">
+	<summary>
+Control lblTxt.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.Site.HeadContent">
 	<summary>
 Control HeadContent.
 </summary>
@@ -586,6 +594,166 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:Inmobiliaria.Register.RegisterUserWizardStep">
 	<summary>
 Control RegisterUserWizardStep.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.EdificiosDataSource">
+	<summary>
+Control EdificiosDataSource.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.txtPais">
+	<summary>
+Control txtPais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.txtProvincia">
+	<summary>
+Control txtProvincia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.txtCiudad">
+	<summary>
+Control txtCiudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.txtCalle">
+	<summary>
+Control txtCalle.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.cbTipoVia">
+	<summary>
+Control cbTipoVia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.cbEstado">
+	<summary>
+Control cbEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.cbTipo">
+	<summary>
+Control cbTipo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.cbNumHabs">
+	<summary>
+Control cbNumHabs.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.cbNumBanios">
+	<summary>
+Control cbNumBanios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbAscensor">
+	<summary>
+Control chbAscensor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbPiscina">
+	<summary>
+Control chbPiscina.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbTerraza">
+	<summary>
+Control chbTerraza.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbParking">
+	<summary>
+Control chbParking.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbCalefaccion">
+	<summary>
+Control chbCalefaccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbAmueblado">
+	<summary>
+Control chbAmueblado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbJardin">
+	<summary>
+Control chbJardin.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.chbTrastero">
+	<summary>
+Control chbTrastero.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.btnBuscar">
+	<summary>
+Control btnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.BusquedaAvanzada.btnRestablecer">
+	<summary>
+Control btnRestablecer.
 </summary>
 	<remarks>
 Campo generado automáticamente.

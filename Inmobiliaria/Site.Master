@@ -45,7 +45,7 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Página principal"/>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="Sobre nosotros"/>
-                        <asp:MenuItem Text="Búsqueda Avanzada" Value="Búsqueda Avanzada"/>
+                        <asp:MenuItem NavigateUrl="~/BusquedaAvanzada.aspx" Text="Búsqueda Avanzada"/>
                     </Items>
             </asp:Menu>
           
