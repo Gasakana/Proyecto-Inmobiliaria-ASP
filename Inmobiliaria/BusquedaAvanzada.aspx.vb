@@ -19,7 +19,7 @@
         cbTipoVia.Items.Add("Plaza")
         cbTipoVia.Items.Add("Bulevar")
         cbTipoVia.Items.Add("Paseo")
-        cbTipoVia.Items.Add("Paseo Maritimo")
+        cbTipoVia.Items.Add("Paseo Marítimo")
         cbTipoVia.Items.Add("Camino")
         cbTipoVia.Items.Add("Carretera")
         cbTipoVia.Items.Add("otro")
@@ -47,7 +47,7 @@
         'Tipo de edificacion
 
         cbTipo.Items.Add("No seleccionado")
-        cbTipo.Items.Add("Apartamanto")
+        cbTipo.Items.Add("Apartamento")
         cbTipo.Items.Add("Ático")
         cbTipo.Items.Add("Chalet")
         cbTipo.Items.Add("Dúplex")
@@ -99,10 +99,10 @@
 
         If (txtCalle.Text <> "") Then
             If (esprimera = True) Then
-                consulta = consulta & " nombre_via LIKE '%" & txtCiudad.Text & "%'"
+                consulta = consulta & " nombre_via LIKE '%" & txtCalle.Text & "%'"
                 esprimera = False
             Else
-                consulta = consulta & " AND  nombre_via LIKE '%" & txtCiudad.Text & "%'"
+                consulta = consulta & " AND  nombre_via LIKE '%" & txtCalle.Text & "%'"
             End If
         End If
 
@@ -144,19 +144,19 @@
 
         If (chbTerraza.Checked = True) Then
             If (esprimera = True) Then
-                consulta = consulta & " terraza= 1"
+                consulta = consulta & " terraza=  1"
                 esprimera = False
             Else
-                consulta = consulta & " AND  terraza= 1"
+                consulta = consulta & " AND  terraza = 1"
             End If
         End If
 
         If (chbPiscina.Checked = True) Then
             If (esprimera = True) Then
-                consulta = consulta & " piscina= 1  "
+                consulta = consulta & " piscina = 1  "
                 esprimera = False
             Else
-                consulta = consulta & " AND  piscina= 1"
+                consulta = consulta & " AND  piscina = 1"
             End If
         End If
 
@@ -174,7 +174,7 @@
                 consulta = consulta & " calefaccion = 1  "
                 esprimera = False
             Else
-                consulta = consulta & " AND  calefaccion= 1"
+                consulta = consulta & " AND  calefaccion = 1"
             End If
         End If
 
@@ -199,28 +199,28 @@
 
         If (cbEstado.Text <> "No seleccionado") Then
             If (esprimera = True) Then
-                consulta = consulta & " estado = '%" & cbEstado.Text & "%'"
+                consulta = consulta & " estado = '" & cbEstado.Text & "'"
                 esprimera = False
             Else
-                consulta = consulta & " AND estado = '%" & cbEstado.Text & "%'"
+                consulta = consulta & " AND estado = '" & cbEstado.Text & "'"
             End If
         End If
 
         If (cbTipo.Text <> "No seleccionado") Then
             If (esprimera = True) Then
-                consulta = consulta & " tipo = '%" & cbTipo.Text & "%'"
+                consulta = consulta & " tipo = '" & cbTipo.Text & "'"
                 esprimera = False
             Else
-                consulta = consulta & " AND tipo = '%" & cbTipo.Text & "%'"
+                consulta = consulta & " AND tipo = '" & cbTipo.Text & "'"
             End If
         End If
 
         If (cbTipoVia.Text <> "No seleccionado") Then
             If (esprimera = True) Then
-                consulta = consulta & " tipo_via = '%" & cbTipoVia.Text & "%'"
+                consulta = consulta & " tipo_via = '" & cbTipoVia.Text & "'"
                 esprimera = False
             Else
-                consulta = consulta & " AND tipo_via = '%" & cbTipoVia.Text & "%'"
+                consulta = consulta & " AND tipo_via = '" & cbTipoVia.Text & "'"
             End If
         End If
 
@@ -268,6 +268,7 @@
             Loop
         Else
             Console.WriteLine("No rows found.")
+
         End If
 
         reader.Close()

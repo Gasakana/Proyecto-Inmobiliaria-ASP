@@ -6,15 +6,7 @@ Inmobiliaria
 </name>
 </assembly>
 <members>
-<member name="F:Inmobiliaria.ResultadoBúsqueda.lblTxt">
-	<summary>
-Control lblTxt.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:Inmobiliaria.Site.HeadContent">
+<member name="F:Inmobiliaria.Site.HeadContent">
 	<summary>
 Control HeadContent.
 </summary>
@@ -289,6 +281,14 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:Inmobiliaria._Default.Image9">
 	<summary>
 Control Image9.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:Inmobiliaria.ResultadoBúsqueda.lblTxt">
+	<summary>
+Control lblTxt.
 </summary>
 	<remarks>
 Campo generado automáticamente.

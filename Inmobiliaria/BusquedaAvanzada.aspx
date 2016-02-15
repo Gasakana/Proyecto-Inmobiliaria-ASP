@@ -9,8 +9,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>Busca, ojea y encuentra tu piso ideal.</h2>
-
+    <h2>Encuentra los pisos que se adapten a tus necesidades :</h2>
+    <br />
     <div style="height: 678px; width: 1029px; margin-bottom: 44px" >
       <div style="height: 686px; width: 666px; margin-left: 59px">
      
@@ -19,7 +19,7 @@
                     SelectCommand="SELECT [id], [tipo_via], [nombre_via], [numero_via], [piso], [letra_piso], [cp], [pais], [ciudad], [localidad], [precio], [n_habs], [n_banios], [superficie], [ascensor], [parking], [amueblado], [terraza], [calefaccion], [piscina], [jardin], [trastero], [estado], [tipo] FROM [Edificios]">
                 </asp:SqlDataSource>
           País:<br />
-        <asp:TextBox ID="txtPais" runat="server" style="margin-top: 10px">España</asp:TextBox>
+        <asp:TextBox ID="txtPais" runat="server" style="margin-top: 10px" Enabled="False">España</asp:TextBox>
         <br />
           <br />
           Provincia:<br />
@@ -30,7 +30,7 @@
         <asp:TextBox ID="txtCiudad" runat="server" style="margin-top: 10px"></asp:TextBox>
         <br />
         <br />
-          Calle:<br />
+          Nombre de la via:<br />
         <asp:TextBox ID="txtCalle" runat="server" style="margin-top: 10px"></asp:TextBox>
           <br />
           <br />

@@ -10,7 +10,6 @@ Public Class WebForm1
         If idUrl <> 0 Then
             mostrarDatosEdificio(idUrl)
         End If
-        'lblFlatName.Text() = idUrl
     End Sub
 
     Private Sub cargarLabel(dato As String, valor As String)
@@ -30,9 +29,9 @@ Public Class WebForm1
         miEdificio = datosPiso.ObtenerEdificio(idUrl)
 
         For Each Row As DataRow In miEdificio.Rows
-            lblFlatName.Text() = " " & Row("tipo_via").ToString & "\" & Row("nombre_via").ToString & ", " & Row("numero_via").ToString & ", " & Row("piso").ToString & ", " & Row("letra_piso").ToString & "."
+            lblFlatName.Text() = " " & Row("tipo_via").ToString & "\" & Row("nombre_via").ToString & ", Nº" & Row("numero_via").ToString & ", Piso: " & Row("piso").ToString & ", " & Row("letra_piso").ToString & "."
             Descripcion.Text() = lblFlatName.Text() & " " & Row("cp").ToString & ", " & Row("pais").ToString & " , " & Row("pais").ToString & " "
-            NumMetros.Text() = Row("superficie").ToString
+            NumMetros.Text() = Row("superficie").ToString & "m<sup>2</sup>"
             NumHab.Text() = Row("n_habs").ToString
             NumBanios.Text() = Row("n_banios").ToString
 

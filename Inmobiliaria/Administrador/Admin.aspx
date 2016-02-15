@@ -17,7 +17,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Edificios<br />
+    <h2>Administrar edificios<br />
+        <br />
     </h2>
     <table class="style1">
         <tr>

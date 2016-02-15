@@ -11,9 +11,12 @@
         If txtId.Text = "" Then
             lblMensaje.Text = "Debes introducir el identificador del edificio"
             txtId.Focus()
+        ElseIf Not IsNumeric(txtId.Text) Then
+            lblMensaje.Text = "El campo id debe ser numérico"
+            txtId.Focus()
         ElseIf Not Edificio.ComprobarEdificio(txtId.Text) Then
             lblMensaje.Text = "No se han encontrado resultados del edificio a buscar"
-            txtId.Focus()
+            txtId.Focus()     
         Else
             mostrarDatosEdificio()
             lblMensaje.Text = "Datos del Edificio"
@@ -86,11 +89,16 @@
             txtId.Focus()
             Exit Sub
         End If
+        If Not IsNumeric(txtId.Text) Then
+            lblMensaje.Text = "El campo id debe ser numérico"
+            txtId.Focus()
+            Exit Sub
+        End If
         If Edificio.ComprobarEdificio(txtId.Text) Then
             lblMensaje.Text = "El edificio ya existe"
             txtId.Focus()
             Exit Sub
-        End If
+        End If    
         If txtNombreVia.Text = "" Then
             lblMensaje.Text = "Debes introducir el nombre de la vía"
             txtNombreVia.Focus()
@@ -191,6 +199,11 @@
     Protected Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If txtId.Text = "" Then
             lblMensaje.Text = "Debes introducir un ID para el edificio"
+            txtId.Focus()
+            Exit Sub
+        End If
+        If Not IsNumeric(txtId.Text) Then
+            lblMensaje.Text = "El campo id debe ser numérico"
             txtId.Focus()
             Exit Sub
         End If
@@ -296,7 +309,11 @@
             txtId.Focus()
             Exit Sub
         End If
-
+        If Not IsNumeric(txtId.Text) Then
+            lblMensaje.Text = "El campo id debe ser numérico"
+            txtId.Focus()
+            Exit Sub
+        End If
         If Not Edificio.ComprobarEdificio(txtId.Text) Then
             lblMensaje.Text = "El edificio no existe"
             txtId.Focus()

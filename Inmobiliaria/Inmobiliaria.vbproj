@@ -94,6 +94,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Administrador\Admin.aspx" />
     <Content Include="BusquedaAvanzada.aspx" />
+    <Content Include="imag\equipo-de-trabajo.png" />
     <Content Include="ResultadoBusqueda.aspx" />
     <Content Include="imag\lupa.jpg" />
     <Content Include="Styles\Site.css" />
